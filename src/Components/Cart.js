@@ -18,11 +18,6 @@ function Cart({ cart, updateCart, activeCategory, setActiveCategory }) {
 		localStorage.setItem('cart', JSON.stringify(cart));
 	}, [cart])
 
-	useEffect(() => {
-			alert(`J'aurai ${total}€ à payer 💸`)
-		}, [total, activeCategory])
-
-
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
